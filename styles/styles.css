@@ -3,6 +3,7 @@
   --txt-white: #fff;
   --txt-orange: #ec6435;
   --bg-orange: #ec6435;
+  --bg-white: #fff;
 }
 
 *,
@@ -50,6 +51,7 @@ body {
 
 .navbar__items {
   display: flex;
+  align-items: center;
 }
 
 .navbar__items li {
@@ -58,6 +60,7 @@ body {
 
 .navbar__items a {
   color: var(--txt-black);
+  font-weight: 600;
 }
 
 .navbar__item--arrow::after {
@@ -166,4 +169,19 @@ main {
   font-family: inherit;
   font-size: 1.7rem;
   font-weight: 700;
+}
+
+.button--nav {
+  height: 2.8rem;
+  padding: 0rem 1rem;
+  background-color: var(--bg-w);
+  color: var(--bg-orange);
+  border: 2px solid var(--bg-orange);
+  margin-top: 0;
+}
+
+.button--nav:hover {
+  background-color: var(--bg-orange);
+  color: var(--txt-white);
+  border: 2px solid transparent;
 }

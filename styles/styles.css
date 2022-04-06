@@ -45,19 +45,19 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar__links ul {
+.navbar__items {
   display: flex;
 }
 
-.navbar__links li {
+.navbar__items li {
   margin-left: 2.5rem;
 }
 
-.navbar__links a {
+.navbar__items a {
   color: var(--txt-black);
 }
 
-.navbar__link--arrow::after {
+.navbar__item--arrow::after {
   content: "\25BE";
   padding-left: 4px;
 }

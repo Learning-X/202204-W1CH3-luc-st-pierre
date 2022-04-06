@@ -1,5 +1,8 @@
 :root {
   --txt-black: #000;
+  --txt-white: #fff;
+  --txt-orange: #ec6435;
+  --bg-orange: #ec6435;
 }
 
 *,
@@ -60,4 +63,49 @@ body {
 .navbar__item--arrow::after {
   content: "\25BE";
   padding-left: 4px;
+}
+
+main {
+  margin: 0 2.3rem;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.hero__title {
+  color: var(--txt-black);
+  font-size: 3.6rem;
+}
+
+.hero__subtitle {
+  text-transform: uppercase;
+  color: var(--txt-orange);
+  font-size: 1.2rem;
+}
+
+.button {
+  height: 3.2rem;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background-color: var(--bg-orange);
+  padding: 0rem 2rem;
+  border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+  color: var(--txt-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.1s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  margin-top: 1rem;
+}
+
+.button--viewall:hover {
+  background-color: #fff;
+  color: var(--bg-orange);
+  border: 2px solid var(--bg-orange);
 }

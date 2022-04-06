@@ -120,13 +120,50 @@ main {
   margin-top: 1.6rem;
 }
 
-.cards__item {
-}
-
 .cards__item img {
   height: 20rem;
   border-radius: 2rem;
   width: 17rem;
   object-position: center;
   object-fit: cover;
+}
+
+.cards__item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cards__content {
+  color: #fff;
+  position: absolute;
+  inset: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s all;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  border-radius: 2rem;
+}
+
+.cards__item:hover .cards__content {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cards__subtitle {
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding-bottom: 0.9rem;
+  text-transform: uppercase;
+}
+
+.cards__title {
+  font-family: inherit;
+  font-size: 1.7rem;
+  font-weight: 700;
 }

@@ -1,3 +1,7 @@
+:root {
+  --txt-black: #000;
+}
+
 *,
 *::before,
 *::after {
@@ -18,10 +22,42 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 html {
   font-size: 1.25em;
 }
 
 body {
   font-family: "Nunito", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2.3rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__items {
+  display: flex;
+}
+
+.navbar__items li {
+  margin-left: 2.5rem;
+}
+
+.navbar__items a {
+  color: var(--txt-black);
+}
+
+.navbar__item--arrow::after {
+  content: "\25BE";
+  padding-left: 4px;
 }
